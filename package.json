@@ -1,0 +1,32 @@
+{
+    "name": "niya-celebration-ecommerce",
+    "version": "1.0.0",
+    "description": "Modern e-commerce platform built with React.js and Node.js",
+    "private": true,
+    "scripts": {
+        "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+        "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+        "frontend:dev": "cd frontend && npm start",
+        "backend:dev": "cd backend && node server.js",
+        "frontend:build": "cd frontend && npm run build",
+        "backend:start": "cd backend && npm start",
+        "test": "cd frontend && npm test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/your-username/niya-celebration-ecommerce.git"
+    },
+    "keywords": [
+        "ecommerce",
+        "react",
+        "nodejs",
+        "mysql",
+        "typescript",
+        "tailwind"
+    ],
+    "author": "Your Name",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "concurrently": "^7.6.0"
+    }
+}
